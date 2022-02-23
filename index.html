@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head> 
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animaciones número primitiva</title>
+    <link rel="stylesheet" href="Style.css">
     <script>
         function sorteo() {
             const num = [];
@@ -32,22 +33,28 @@
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <h1>Practica De Animaciones</h1>
+    </header>
     <main>
+        <div class="mover"></div>
+        <div class="gatete"> &#128571</div>
         <div class="nums">
-            <div>1</div>
+            <div class="des">1</div>
             <div>2</div>
             <div>3</div>
             <div>4</div>
             <div>5</div>
             <div>6</div>
-            <div>C</div>
+            <div class="fondo">C</div>
         </div>
-        <div>
+        <div class="rotar">
             <div id="fecha">Fecha del sorteo: </div>
         </div>
     </main>
-    <footer></footer>
+    <footer class="copy">
+        &copy; Dácil Marco Contreras
+    </footer>
 </body>
 
 </html>

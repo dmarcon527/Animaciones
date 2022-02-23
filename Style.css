@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2? family = Hind + Siliguri: wght @ 300 & display = swap");
+
+h1 {
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", "Arial", "sans-serif";
+  color: darkslategray;
+}
+h1:hover {
+  transform: rotateY(180deg);
+  transition: transform 3s;
+}
+@keyframes trasladarDer {
+  from {
+    top: 0;
+    opacity: 1;
+    color: blue;
+  }
+
+  to {
+    transform: translate(600px, 0);
+    opacity: 0;
+    color: deeppink;
+  }
+}
+.copy {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", "Arial", "sans-serif";
+  font-size: 1rem;
+  top: 0;
+  animation-name: trasladarDer;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+
+.rotar:hover {
+  transform: rotateY(18deg);
+  transition: transform 2s;
+}
+
+@keyframes desaparecer {
+  from {
+    top: 0;
+    opacity: 1;
+  }
+
+  to {
+    top: calc(100vh - 3rem);
+    opacity: 0;
+  }
+}
+.des {
+  animation-name: desaparecer;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
+}
+
+.gatete {
+  font-size: 2rem;
+  position: absolute;
+  animation-name: desaparecer;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+
+.fondo {
+  display: flex;
+  flex-direction: row;
+  width: 2vmax;
+  height: 2vmax;
+  background-color: hotpink;
+  transition: transform 1s;
+}
+.fondo:hover {
+  transform: rotate(45deg);
+}
+
+@media (max-width: 1000px) {
+  body {
+    background-color: lightpink;
+  }
+}
+
+@media (min-width: 634px) and (max-width: 941px) {
+  body {
+    background-color: aquamarine;
+  }
+}
+@media (min-width: 900px) {
+  body {
+    background-color: darkgray;
+  }
+}
